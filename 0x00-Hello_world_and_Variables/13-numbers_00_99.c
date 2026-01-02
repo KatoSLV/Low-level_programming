@@ -18,7 +18,7 @@ int main(void)
 		{
 			putchar(fdgt);
 			putchar(sdgt);
-			if (!(fdgt == 57 && sdgt == 57))
+			if (sdgt != 57 || fdgt != 57)
 			{
 				putchar(',');
 				putchar(' ');

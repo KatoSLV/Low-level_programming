@@ -10,7 +10,7 @@
 int main(void)
 {
 	int fdgt = 48;
-	int sdgt = 49;
+	int sdgt;
 
 	while (fdgt <= 56)
 	{
@@ -19,7 +19,7 @@ int main(void)
 		{
 			putchar(fdgt);
 			putchar(sdgt);
-			if (!(fdgt == 56 && sdgt == 57))
+			if (fdgt != 56 || sdgt != 57)
 			{
 				putchar(',');
 				putchar(' ');
